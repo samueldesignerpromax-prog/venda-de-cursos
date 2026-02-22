@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - CursosDev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Cursos<span>Dev</span></a>
+            
+            <div class="nav-menu">
+                <a href="index.html">Início</a>
+                <a href="cursos.html" class="active">Cursos</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#contato">Contato</a>
+            </div>
+
+            <div class="nav-auth" id="navAuth"></div>
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nossos Cursos</h1>
+            <p>Escolha o curso que mais combina com você</p>
+        </div>
+    </section>
+
+    <section class="courses-section">
+        <div class="container">
+            <div class="courses-header">
+                <div class="categories-filter">
+                    <button class="filter-btn active" data-cat="todos">Todos</button>
+                    <button class="filter-btn" data-cat="Programação">Programação</button>
+                    <button class="filter-btn" data-cat="Front-end">Front-end</button>
+                    <button class="filter-btn" data-cat="Back-end">Back-end</button>
+                    <button class="filter-btn" data-cat="Framework">Framework</button>
+                    <button class="filter-btn" data-cat="Data Science">Data Science</button>
+                    <button class="filter-btn" data-cat="Banco de Dados">Banco de Dados</button>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar curso...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="courses-grid" id="cursosGrid">
+                <!-- Cursos serão carregados via JavaScript -->
+            </div>
+
+            <div id="loading" class="text-center" style="display: none;">
+                <i class="fas fa-spinner fa-spin"></i> Carregando...
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CursosDev</h3>
+                    <p>Sua plataforma de cursos de programação</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <a href="index.html">Início</a>
+                    <a href="cursos.html">Cursos</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CursosDev. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
