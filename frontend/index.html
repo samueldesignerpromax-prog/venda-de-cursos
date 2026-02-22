@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CursosDev - Sua plataforma de cursos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Cursos<span>Dev</span></a>
+            
+            <div class="nav-menu">
+                <a href="index.html" class="active">Início</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </div>
+
+            <div class="nav-auth" id="navAuth">
+                <!-- Será preenchido via JavaScript -->
+            </div>
+
+            <button class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Aprenda programação do zero e se torne um desenvolvedor</h1>
+                <p>Cursos completos e atualizados com as melhores tecnologias do mercado</p>
+                
+                <div class="hero-buttons">
+                    <a href="cursos.html" class="btn btn-primary">Ver Cursos</a>
+                    <a href="#como-funciona" class="btn btn-secondary">Como Funciona</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Cursos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">Alunos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Aulas</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="features" id="como-funciona">
+        <div class="container">
+            <h2>Como funciona</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>1. Crie sua conta</h3>
+                    <p>Cadastre-se gratuitamente em poucos minutos</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-search"></i>
+                    <h3>2. Escolha seu curso</h3>
+                    <p>Navegue pelos cursos e escolha o que mais combina com você</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>3. Faça a compra</h3>
+                    <p>Pagamento seguro e acesso imediato</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-play-circle"></i>
+                    <h3>4. Comece a aprender</h3>
+                    <p>Acesse as aulas quando e onde quiser</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-courses">
+        <div class="container">
+            <h2>Cursos em Destaque</h2>
+            <div class="courses-grid" id="destaquesGrid">
+                <!-- Cursos serão carregados via JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="cursos.html" class="btn btn-outline">Ver todos os cursos</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>O que nossos alunos dizem</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Aluno">
+                    <p>"Os cursos são excelentes, didática incrível e conteúdo atualizado!"</p>
+                    <h4>João Silva</h4>
+                    <span>Aluno de JavaScript</span>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Aluna">
+                    <p>"Consegui meu primeiro emprego como dev depois de concluir os cursos."</p>
+                    <h4>Maria Santos</h4>
+                    <span>Aluna de React</span>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Aluno">
+                    <p>"Melhor plataforma de cursos de programação que já vi!"</p>
+                    <h4>Pedro Oliveira</h4>
+                    <span>Aluno de Node.js</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Comece sua jornada hoje mesmo!</h2>
+            <p>Garanta seu futuro na área de tecnologia</p>
+            <a href="cursos.html" class="btn btn-primary btn-large">Quero começar agora</a>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CursosDev</h3>
+                    <p>Sua plataforma de cursos de programação</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <a href="index.html">Início</a>
+                    <a href="cursos.html">Cursos</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <a href="#">FAQ</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Fale Conosco</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contato@cursosdev.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CursosDev. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
