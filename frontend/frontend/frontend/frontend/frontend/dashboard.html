@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Cursos - CursosDev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Cursos<span>Dev</span></a>
+            
+            <div class="nav-menu">
+                <a href="index.html">Início</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="dashboard.html" class="active">Meus Cursos</a>
+            </div>
+
+            <div class="nav-auth" id="navAuth"></div>
+            <button class="mobile-menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h1>Meus Cursos</h1>
+                <button class="btn btn-outline" id="logoutBtn">Sair</button>
+            </div>
+
+            <div class="dashboard-tabs">
+                <button class="tab-btn active" data-tab="meus-cursos">Meus Cursos</button>
+                <button class="tab-btn" data-tab="dados">Meus Dados</button>
+            </div>
+
+            <div class="tab-content active" id="meus-cursos">
+                <div class="my-courses-grid" id="meusCursos">
+                    <!-- Cursos comprados serão carregados -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="dados">
+                <div class="user-data">
+                    <h3>Meus Dados</h3>
+                    <div class="data-item">
+                        <label>Nome:</label>
+                        <span id="userNome"></span>
+                    </div>
+                    <div class="data-item">
+                        <label>Email:</label>
+                        <span id="userEmail"></span>
+                    </div>
+                    <div class="data-item">
+                        <label>Membro desde:</label>
+                        <span id="userData"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
